@@ -58,7 +58,7 @@ const App = () => {
   const saveStateToBackend = async () => {
     try {
       await axios.post(
-        "https://cfm-backend-238390561596.us-central1.run.app/components",
+        "https://cfm-backend-238390561596.us-central1.run.app/components/",
         components.map((item) => ({
           id: item.id,
           type: item.type,
