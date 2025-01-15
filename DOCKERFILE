@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8080
 
 # Define the command to run your app (adjust as necessary for your app)
-CMD ["npm", "start"]
+CMD ["npm", "run","start"]
