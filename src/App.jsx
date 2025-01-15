@@ -17,7 +17,7 @@ const App = () => {
   // Function to fetch state from backend
   const fetchStateFromBackend = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/components");
+      const response = await axios.get("https://cfm-backend-238390561596.us-central1.run.app/components");
       const fetchedComponents = response.data.map((item) => ({
         id: item.id,
         type: item.type,
@@ -59,6 +59,7 @@ const App = () => {
     try {
       await axios.post(
         "https://cfm-backend-238390561596.us-central1.run.app/components/",
+        
         components.map((item) => ({
           id: item.id,
           type: item.type,
